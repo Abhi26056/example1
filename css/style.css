@@ -1,0 +1,46 @@
+h1{
+    text-align: center;
+}
+#container{
+    display: flex;
+}
+.item{
+    border: 3px solid black;
+    margin: 10px;
+    background-color: gray;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 170px;
+}
+h2{
+    border: 2px solid black;
+    float: right;
+    margin: 0px;
+    width: 150px;
+    text-align: center;
+}
+p{
+    clear: both;
+    padding: 20px;
+}
+#one h2{
+    background-color: peachpuff;
+}
+#two h2{
+    background-color: brown;
+}
+#three h2{
+    background-color: wheat;
+}
+@media(max-width:768px){
+    #container{
+        flex-wrap: wrap;
+    }
+    .item{
+        width: 350px;
+        height: 200px;
+    }
+    #three{
+        width: 100vw;
+    }
+}
